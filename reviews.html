@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<title>Reviews</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+
+<body>
+<div class="topnav">
+	<a href="homepage.html" class="navbrand">
+		<img width="80px" height="80px" src="logo2.png" alt="logo">
+	</a>
+	<a href="reviews.html">Reviews</a>
+	<a href="Comparison.html">Comparisons</a>
+	<a href="#how-to-guide">How-To Guides</a>
+	<a href="news.html">News Updates</a>
+	<a href="phonefinder.html">Phone Finder</a>
+	<a href="#buyer's guide">Buyer's Guides</a>
+	<div class="search-container">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search" name="search">
+      <button type="submit">Search</button>
+    </form>
+  </div>
+</div>
+
+<div class="jumbotron text-left">
+  <h1>Mobile Phone Reviews</h1>
+</div>
+
+<div class="reviewcontent">
+<div class="filters">
+    <h2>Filters</h2>
+    <form id="filterForm">
+        <label for="brand">Brand:</label><br>
+        <select id="brand" name="brand">
+            <option value="all">All</option>
+            <option value="honor">Honor</option>
+            <option value="iqoo">iQOO</option>
+            <option value="samsung">Samsung</option>
+        </select><br>
+
+        <label for="price">Price:</label><br>
+        <select id="brand" name="brand">
+            <option value="all">All</option>
+            <option value="honor">Honor</option>
+            <option value="iqoo">iQOO</option>
+            <option value="samsung">Samsung</option>
+        </select><br>
+
+        <label for="os">Operating System:</label><br>
+        <select id="os" name="os">
+			<option value="all">All</option>
+            <option value="iOS">iOS</option>
+            <option value="android">Android</option>
+			<option value="harmony">Harmony OS</option>
+        </select><br>
+
+        <label for="screenSize">Screen Size:</label><br>
+        <select id="screen" name="screen">
+			<option value="all">All</option>
+            <option value="6.5">6.5 inch</option>
+            <option value="5.5">5.5 inch</option>
+            <option value="5">5 inch</option>
+            <option value="4.7">4.7 inch</option>
+        </select><br>
+
+        <label for="cameraQuality">Camera Quality:</label><br>
+        <select id="brand" name="brand">
+			<option value="all">All</option>
+            <option value="basic">Basic</option>
+            <option value="advance">Advance</option>
+            <option value="pro">Pro</option>
+            <option value="specialize">Specialize</option>
+        </select><br><br>
+
+        <button type="button" onclick="applyFilters()">Apply Filters</button>
+    </form>
+</div>
+	<h2>Top Reviews</h2>
+	<div class="row">
+		<div class="card">
+			<img src="honorx7b.jpg" alt="honorx7b">
+			<h3> HONOR X7b Review - Good enough for a budget phone?</h3>
+			<p>If you are looking for an entry-level phone for your daily needs, the HONOR X7b could be the phone you need. 
+			In case you didn’t know, this phone arrived alongside the HONOR X8b variant on 22 December 2023 for the Malaysian market. 
+			This phone comes in 2 colours - Emerald Green and Flowing Silver.</p>
+			<a href="https://technave.com/gadget/HONOR-X7b-Review-Good-enough-for-a-budget-phone-36976.html" class="button" target="_blank">Read more</a>
+		</div>
+		<div class="card">
+			<img src="iqoo.jpg" alt="honorx7b">
+			<h3> If Snapdragon 8 Gen 3 performance is what you're looking for, then the iQOO 12 5G might be your 1st choice!</h3>
+			<p>For those of us who appreciate mobile excellence, the iQOO 12's arrival is a reason to be excited. 
+			With the powerful Snapdragon 8 Gen 3 chipset under its hood, this phone offers an impressive performance without compromising on other aspects or burning a hole in your pocket. 
+			Let's dive into what makes the iQOO 12 a mobile performance marvel.</p>
+			<a href="https://technave.com/gadget/If-Snapdragon-8-Gen-3-performance-is-what-you-re-looking-for-then-the-iQOO-12-5G-might-be-your-1st-choice-36973.html" class="button" target="_blank">Read more</a>
+		</div>
+		<div class="card">
+			<img src="samsung.jpg" alt="samsung">
+			<h3> Samsung Galaxy S23 FE - An FE device with surprisingly solid cameras</h3>
+			<p>The Samsung Galaxy S23 FE is made for those who want it all. From daily blogging to nighttime photography, 
+			this smartphone combines the latest technology into a more budget-friendly device.
+				The new FE model faithfully follows the Galaxy S23's classic aesthetics and practical features. 
+				It's available in four colours - Mint, Graphite, Cream and Purple - with each colour wrapped in a stunning metallic frame.</p>
+			<a href="https://technave.com/gadget/Samsung-Galaxy-S23-FE-An-FE-device-with-surprisingly-solid-cameras-36795.html" class="button" target="_blank">Read more</a>
+		</div>
+		<div class="card">
+			<img src="samsungs23fe.jpg" alt="samsung">
+			<h3> Samsung Galaxy S23 FE - Smooth as butter in everything it does</h3>
+			<p>Smartphones with good specs and wallet-friendly prices are highly sought after by Malaysians. That's why some brands have flagship phones in this category. 
+				For Samsung, the phone that best fits this is the Samsung Galaxy S23 FE.
+				Offering a number of appealing features, a design made for the fans, and a relatively reasonable price it also features surprisingly good camera performance. </p>
+			<a href="https://technave.com/gadget/Samsung-Galaxy-S23-FE-Smooth-as-butter-in-everything-it-does-36801.html#:~:text=It%20delivers%20rich%20and%20engaging,a%20highly%20smooth%20gaming%20experience." class="button" target="_blank">Read more</a>
+		</div>
+	</div>
+</div>
+</body>
+
+<footer>
+    <div class="fcolumn">
+        <h2>Sponsored Content</h2>
+        <p><a href="https://www.techradar.com/sg/phones/best">Sponsored Content 1</a></p>
+        <p><a href="https://www.pocket-lint.com/phones/guides/">Sponsored Content 2</a></p>
+        <p><a href="https://technave.com/">Sponsored Content 3</a></p>
+    </div>
+    <div class="fcolumn">
+        <h2>Legal</h2>
+        <p><a href="privacy.html">Privacy Policy</a></p>
+        <p><a href="term.html">Term Of Use</a></p>
+    </div>
+    <div class="fcolumn">
+        <h2>Contact Us</h2>
+        <p><a href="mailto:hege@example.com">Email</a></p>
+        <p><a href="tel:+60123456789">Phone</p>
+        <p><a href="https://maps.app.goo.gl/Qx76Pd6eB2K2ZU2t8">Address</a></p>
+    </div>
+    <div class="fcolumn">
+        <div class="copyright">
+			<h2>Copyright 2023<br>All Right Reserved.</h2>
+		</div>
+    </div>
+</footer>
+</html>

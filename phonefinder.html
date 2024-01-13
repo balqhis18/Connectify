@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Phone Finder</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</header>
+
+<body>
+  <div class="topnav">
+    <a href="homepage.html" class="navbrand">
+      <img width="80px" height="80px" src="logo2.png" alt="logo">
+    </a>
+		<a href="reviews.html">Reviews</a>
+		<a href="Comparison.html">Comparisons</a>
+		<a href="guide.html">How-To Guides</a>
+		<a href="news.html">News Updates</a>
+		<a href="phonefinder.html">Phone Finder</a>
+		<a href="buyerguide.html">Buyer's Guides</a>    
+	<div class="search-container">
+		<form action="/action_page.php">
+			<input type="text" placeholder="Search" name="search">
+			<button type="submit">Search</button>
+		</form>
+    </div>
+  </div>
+
+<div class="jumbotron text-left">
+  <h1>Phone Finder</h1>
+</div>
+<div class="container">
+	<div class="sidebar" style="margin-left:20px;">
+	<table>
+		<tr>
+		<th colspan="3" style="background-color:#4F6367;">PHONE FINDER</th>
+		</tr>
+		<tr>
+		<td>SAMSUNG</td>
+		<td>XIAOMI</td>
+		<td>ASUS</td>
+		</tr>
+		<tr>
+		<td>INFINIX</td>
+		<td>APPLE</td>
+		<td>GOOGLE</td>
+		</tr>
+		<tr>
+		<td>ALCATEL</td>
+		<td>HONOR</td>
+		<td>HUAWEI</td>
+		</tr>
+		<tr>
+		<td>OPPO</td>
+		<td>NOKIA</td>
+		<td>REALME</td>
+		</tr>
+		<tr>
+		<td>ONEPLUS</td>
+		<td>SHARP</td>
+		<td>LENOVO</td>
+		</tr>
+		<tr>
+		<td>BLACKBERRY</td>
+		<td>ULEFONE</td>
+		<td>ZTE</td>
+		</tr>
+		<tr>
+		<th colspan="1" style="background-color:#4F6367;">All Brands</th>
+		<th style="border:0"></th>
+		<th colspan="1" style="background-color:#4F6367;">Popular</th>
+		</tr>
+	</table>
+	</div>
+
+	<div class="ads">
+		<h2 style="text-align:center;">Advertisement</h2>
+	</div>
+</div>
+
+<div class="pfcontent">
+	<h2>GENERAL</h2>
+	<form id="filterForm">
+		<label for="brand">Brand:</label>
+		<select id="brandGeneral" name="brandGeneral">
+			<option value="all">All</option>
+			<option value="honor">Honor</option>
+			<option value="iqoo">iQOO</option>
+			<option value="samsung">Samsung</option>
+		</select>
+		<label for="year">Year:</label>
+		<select id="yearGeneral" name="yearGeneral">
+			<option value="all">All</option>
+			<option value="2022">2022</option>
+			<option value="2021">2021</option>
+		</select>
+		<label for="general">General:</label>
+		<select id="generalGeneral" name="generalGeneral">
+			<option value="all">All</option>
+			<option value="feature1">Feature 1</option>
+			<option value="feature2">Feature 2</option>
+		</select>
+		<label for="price">Price:</label>
+		<select id="priceGeneral" name="priceGeneral">
+			<option value="all">All</option>
+			<option value="low">Low</option>
+			<option value="medium">Medium</option>
+			<option value="high">High</option>
+		</select>
+	</form><br>
+
+	<h2>NETWORK</h2>
+	<form id="filter">
+		<label for="3g">3G:</label>
+		<select id="3gNetwork" name="3gNetwork">
+			<option value="all">HSPA 850</option>
+			<option value="honor">HSPA 900</option>
+			<option value="iqoo">HSPA 1700</option>
+			<option value="samsung">HSPA 1900</option>
+		</select>
+		<label for="4g">4G:</label>
+		<select id="4gNetwork" name="4gNetwork">
+			<option value="all">All</option>
+			<option value="LTE Band 1">LTE Band 1</option>
+			<option value="LTE Band 2">LTE Band 2</option>
+			<option value="LTE Band 3">LTE Band 3</option>
+			<option value="LTE Band 4">LTE Band 4</option>
+			<option value="LTE Band 5">LTE Band 5</option>
+			<option value="LTE Band 6">LTE Band 6</option>
+		</select>
+		<label for="5g">5G:</label>
+		<select id="5gNetwork" name="5gNetwork">
+			<option value="5G Band 1">5G Band 1</option>
+			<option value="5G Band 2">5G Band 2</option>
+			<option value="5G Band 3">5G Band 3</option>
+			<option value="5G Band 4">5G Band 4</option>
+			<option value="5G Band 5">5G Band 5</option>
+			<option value="5G Band 6">5G Band 6</option>
+		</select>
+	</form><br>
+
+	<h2>SIM</h2>
+	<form id="filterForm">
+		<label for="size">Size:</label>
+		<select id="sizeSim" name="sizeSim">
+			<option value="mini-SIM">Mini-SIM</option>
+			<option value="Micro-SIM">Micro-SIM</option>
+			<option value="Nano-SIM">Nano-SIM</option>
+			<option value="eSIM">eSIM</option>
+		</select>
+		<label for="type">Type:</label>
+		<select id="typeSim" name="typeSim">
+			<option value="dual">Dual</option>
+			<option value="triple">Triple</option>
+			<option value="quad">Quad</option>
+		</select>
+	</form><br>
+
+	<h2>BODY</h2>
+	<form id="filterForm">
+		<label for="form">Form:</label>
+		<select id="formBody" name="formBody">
+			<option value="bar">Bar</option>
+			<option value="Flip up">Flip up</option>
+			<option value="Flip down">Flip down</option>
+			<option value="Slide">Slide</option>
+			<option value="Swivel">Swivel</option>
+			<option value="Watch">Watch</option>
+			<option value="Other">Other</option>
+			<option value="Foldable">Foldable</option>
+		</select>
+		<label for="colour">Colour:</label>
+		<input type="text" id="colour" name="colour">
+		<label for="frameMaterial">Frame material:</label>
+		<select id="frameMaterialBody" name="frameMaterialBody">
+			<option value="plastic">Plastic</option>
+			<option value="aluminium">Aluminium</option>
+			<option value="stainless steel">Stainless steel</option>
+			<option value="ceramic">Ceramic</option>
+		</select>
+		<label for="backMaterial">Back Material:</label>
+		<select id="backMaterialBody" name="backMaterialBody">
+			<option value="plastic">Plastic</option>
+			<option value="aluminium">Aluminium</option>
+			<option value="stainless steel">Stainless steel</option>
+			<option value="ceramic">Ceramic</option>
+		</select>
+	</form><br>
+
+	<h2>PLATFORM</h2>
+	<form id="filterForm">
+		<label for="os">OS:</label>
+		<select id="osPlatform" name="osPlatform">
+			<option value="Feature phones">Feature phones</option>
+			<option value="Android">Android</option>
+			<option value="iOS">iOS</option>
+			<option value="Windows Phone">Windows Phone</option>
+		</select>
+		<label for="chipset">Chipset:</label>
+		<select id="chipsetPlatform" name="chipsetPlatform">
+			<option value="Snapdragon 8 Gen 3 Snapdragon 8 Gen 2">Snapdragon 8 Gen 3 Snapdragon 8 Gen 2</option>
+			<option value="Snapdragon 8+ Gen 1">Snapdragon 8+ Gen 1</option>
+			<option value="Snapdragon 8 Gen 1">Snapdragon 8 Gen 1</option>
+			<option value="Snapdragon 7s Gen 2">Snapdragon 7s Gen 2</option>
+		</select>
+	</form><br>
+
+	<h2>MEMORY</h2>
+	<form id="filterForm">
+		<label for="RAM">RAM:</label>
+		<select id="RAM" name="RAM">
+			<option value="all">All</option>
+			<option value="3GB">3GB</option>
+			<option value="4GB">4GB</option>
+			<option value="6GB">6GB</option>
+			<option value="8GB">8GB</option>
+			<option value="10GB">10GB</option>
+			<option value="12GB">12GB</option>
+			<option value="18GB">18GB</option>
+		</select>
+		<label for="storage">Storage:</label>
+		<select id="storageMemory" name="storageMemory">
+			<option value="all">All</option>
+			<option value="32GB">32GB</option>
+			<option value="64GB">64GB</option>
+			<option value="128GB">128GB</option>
+			<option value="256GB">256GB</option>
+		</select>
+	</form><br>
+
+	<h2>AUDIO</h2>
+	<form id="filterForm">
+		<label for="jack">3.5mm Jack:</label>
+		<input type="checkbox" id="jackAudio" name="jackAudio" value="3.5mm jack">
+		<label for="dualSpeaker">Dual Speaker:</label>
+		<input type="checkbox" id="dualSpeakerAudio" name="dualSpeakerAudio" value="dual speaker">
+	</form><br>
+
+	<h2>SENSORS</h2>
+	<form id="filterForm">
+		<label for="gyro">Gyro:</label>
+		<input type="checkbox" id="gyroSensors" name="gyroSensors" value="gyro">
+		<label for="fingerprint">Fingerprint:</label>
+		<input type="checkbox" id="fingerprintSensors" name="fingerprintSensors" value="fingerprint">
+	</form><br>
+
+	<h2>BATTERY</h2>
+	<form id="filterForm">
+		<label for="capacity">Capacity:</label>
+		<select id="capacityBattery" name="capacityBattery">
+			<option value="all">All</option>
+			<option value="1000">Up to 1000 mAh</option>
+			<option value="2000">1001 - 2000 mAh</option>
+			<option value="3000">2001 - 3000 mAh</option>
+			<option value="4000">3001 - 4000 mAh</option>
+			<option value="5000">4001 - 5000 mAh</option>
+			<option value="6000">5001 - 6000 mAh</option>
+			<option value="7000">6001 - 7000 mAh</option>
+		</select>
+		<label for="removable">Removable:</label>
+		<input type="checkbox" id="removableBattery" name="removableBattery" value="removable">
+	</form><br>
+
+</div>
+	
+<footer>
+  <div class="fcolumn">
+      <h2>Sponsored Content</h2>
+      <p><a href="https://www.techradar.com/sg/phones/best">Sponsored Content 1</a></p>
+      <p><a href="https://www.pocket-lint.com/phones/guides/">Sponsored Content 2</a></p>
+      <p><a href="https://technave.com/">Sponsored Content 3</a></p>
+  </div>
+  <div class="fcolumn">
+      <h2>Legal</h2>
+      <p><a href="privacy.html">Privacy Policy</a></p>
+      <p><a href="term.html">Term Of Use</a></p>
+  </div>
+  <div class="fcolumn">
+      <h2>Contact Us</h2>
+      <p><a href="mailto:hege@example.com">Email</a></p>
+      <p><a href="tel:+60123456789">Phone</p>
+      <p><a href="https://maps.app.goo.gl/Qx76Pd6eB2K2ZU2t8">Address</a></p>
+  </div>
+  <div class="fcolumn">
+      <div class="copyright">
+    <h2>Copyright 2023<br>All Right Reserved.</h2>
+  </div>
+  </div>
+</footer>
+
+</body>
+</html>

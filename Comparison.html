@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<title>Comparisons</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<style>
+
+/* Center website */
+.main {
+  max-width: 100%;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+    margin-left:250px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 20px;
+
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: #4f6367;
+  padding: 10px;
+  border-radius:10px;
+  height: 320px;
+  
+}
+
+.content img {
+height:auto;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+  
+}
+
+.btn {
+  background-color: #b8d8d8;
+  border: none;
+  color: #4F6367;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition: 0.3s;
+  border-radius:10px;
+}
+
+.btn:hover {
+  background-color: #EEF5DB;
+  color: #4f6367;
+}
+
+h1,p {
+color: #4F6367 !important;
+}
+
+td{
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  padding-right:4px;
+  background-color: #4f6367;
+  color:#EEF5DB;
+}
+
+table {
+  font-family:Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+</style>
+</head>
+
+<body>
+<div class="topnav">
+	<a href="homepage.html" class="navbrand">
+		<img width="80px" height="80px" src="logo2.png" alt="logo">
+	</a>
+		<a href="reviews.html">Reviews</a>
+		<a href="Comparison.html">Comparisons</a>
+		<a href="guide.html">How-To Guides</a>
+		<a href="news.html">News Updates</a>
+		<a href="phonefinder.html">Phone Finder</a>
+		<a href="buyerguide.html">Buyer's Guides</a>
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search" name="search">
+      <button type="submit">Search</button>
+    </form>
+  </div>
+</div>
+
+
+<div class="main">
+    <title>Comparison Page</title>
+    <h1>Phone Comparison</h1>
+    <hr>
+    <p>Compare your phone with ease.</p>
+
+    <div class="row">
+      <div class="column">
+        <div class="content">
+          <img src="x9b.png" alt="honor" style="width:50%; height:190px;">
+          <h3>HONOR X9B</h3>
+          <button class="btn">Compare</button>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+        <img src="xio.png" alt="MI" style="width:55%; height:190px;">
+          <h3>XIAOMI 13</h3>
+          <button class="btn">Compare</button>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+        <img src="iqoo5.png" alt="Nature" style="width:60%; height:190px;">
+          <h3>IQOO NEO 5</h3>
+          <button class="btn">Compare</button>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+        <img src="op.png" alt="oneplus" style="width:60%; height:190px;">
+          <h3>ONEPLUS CE LITE</h3>
+          <button class="btn" onclick="myFunction()" id="btnID">Compare</button>
+        </div>
+      </div>
+      
+    </div>
+	<h2 style="color:#4f6367;">General</h2>
+	<table>
+		<tr>
+			<td style="background-color: #EEF5DB; color:#4f6367;">Country of Origin</td>
+			<td style="width:23%;">India</td>
+			<td>India</td>
+			<td>     </td>
+			<td>     </td>
+		</tr>
+		<tr>
+			<td style="background-color: #EEF5DB; color:#4f6367;">Sim Type</td>
+			<td>Dual Sim, GSM+GSM (Hybrid Slot)</td>
+			<td>Dual Sim, GSM+GSM </td>
+			<td>Dual Sim, GSM+GSM </td>
+			<td>Dual Sim, GSM+GSM </td>
+		</tr>
+		<tr>
+			<td style="background-color: #EEF5DB; color:#4f6367;">Dual Sim</td>
+			<td>Yes</td>
+			<td>Yes</td>
+			<td>Yes</td>
+			<td>Yes</td>
+		</tr>
+		<tr>
+			<td style="background-color: #EEF5DB; color:#4f6367;">Sim Size</td>
+			<td>Nano SIM</td>
+			<td>Nano+Nano SIM</td>
+			<td>Nano SIM</td>
+			<td>Nano SIM</td>
+		</tr>
+		<tr>
+			<td style="background-color: #EEF5DB; color:#4f6367;">Device Type</td>
+			<td>Smartphone</td>
+			<td>Smartphone</td>
+			<td>Smartphone</td>
+			<td>Smartphone</td>
+		</tr>
+		<tr>
+			<td style="background-color: #EEF5DB; color:#4f6367;">Release Date</td>
+			<td>April 04,2023</td>
+			<td>November 07,2023</td>
+			<td>January 04,2024</td>
+			<td>October 18,2023</td>
+		</tr>
+	</table>
+	<h2 style="color:#4f6367; margin-top:10px;">Design</h2>
+	<table>
+		<tr>
+			<td style="background-color: #EEF5DB; color:#4f6367; width:16%;">Dimensions</td>
+			<td style="width:23%;">76 x 165.5 x 8.3 mm</td>
+			<td style="width:20.5%;">75.9 x 163.2 x 8.1 mm</td>
+			<td style="width:20.5%;">74.24 x 161.15 x 7.98 mm</td>
+			<td style="width:23%;">75.5 x 163.6 x 8 mm</td>
+		</tr>
+		<tr>
+			<td style="background-color: #EEF5DB; color:#4f6367;">Weight</td>
+			<td>195 g</td>
+			<td>203.7 g</td>
+			<td>187 g</td>
+			<td>185 g</td>
+		</tr>
+		<tr>
+			<td style="background-color: #EEF5DB; color:#4f6367;">Bezel less</td>
+			<td> </td>
+			<td>Yes</td>
+			<td>No</td>
+			<td> </td>
+		</tr>
+		<tr>
+			<td style="background-color: #EEF5DB; color:#4f6367;">Colors</td>
+			<td>Pastel Lime, Chromatic Gray</td>
+			<td>Legend,Alpha</td>
+			<td>Coral Purple, Arctic White,Midnight Black</td>
+			<td>Sunrise Orange,Midnight Black, Emerald Green</td>
+		</tr>
+	</table>
+	<h2 style="color:#4f6367; margin-top:10px;">Display</h2>
+	<table>
+		<tr>
+			<td style="background-color: #EEF5DB; color:#4f6367;  width:16%;">Type</td>
+			<td style="width:23%;">Color IPS Screen(1B Colors)</td>
+			<td>Color LTPO AMOLED(1B Colors)</td>
+			<td>Color OLED Screen(1B Colors)</td>
+			<td>Color AMOLED Screen(1B Colors)</td>
+		</tr>
+		<tr>
+			<td style="background-color: #EEF5DB; color:#4f6367;">Touch</td>
+			<td>Yes, 240 Hz Touch Sampling Rate</td>
+			<td>Yes</td>
+			<td>Yes, 240 Hz Touch Sampling Rate</td>
+			<td>Yes </td>
+		</tr>
+		<tr>
+			<td style="background-color: #EEF5DB; color:#4f6367;">Size</td>
+			<td>6.72 inches, 1080 x 2400 pixels, 120 Hz</td>
+			<td>6.78 inches, 1260 x 2800 pixels, 144 Hz</td>
+			<td>6.67 inches, 1220 x 2712 pixels, 120 Hz</td>
+			<td>6.78 inches, 1220 x 2652 pixels, 120 Hz</td>
+		</tr>
+		<tr>
+			<td style="background-color: #EEF5DB; color:#4f6367;">Aspect Ratio</td>
+			<td>20:9</td>
+			<td>20:9</td>
+			<td>20.1:9</td>
+			<td>19.9:9</td>
+		</tr>
+		<tr>
+			<td style="background-color: #EEF5DB; color:#4f6367;">PPI</td>
+			<td>391 PPI</td>
+			<td>453 PPI</td>
+			<td>446 PPI</td>
+			<td>431 PPI</td>
+		</tr>
+	</table>
+
+</div>
+    
+</body>
+
+
+<footer>
+    <div class="fcolumn">
+        <h2>Sponsored Content</h2>
+        <p><a href="https://www.techradar.com/sg/phones/best">Sponsored Content 1</a></p>
+        <p><a href="https://www.pocket-lint.com/phones/guides/">Sponsored Content 2</a></p>
+        <p><a href="https://technave.com/">Sponsored Content 3</a></p>
+    </div>
+    <div class="fcolumn">
+        <h2>Legal</h2>
+        <p><a href="privacy.html">Privacy Policy</a></p>
+        <p><a href="term.html">Term Of Use</a></p>
+    </div>
+    <div class="fcolumn">
+        <h2>Contact Us</h2>
+        <p><a href="mailto:hege@example.com">Email</a></p>
+        <p><a href="tel:+60123456789">Phone</p>
+        <p><a href="https://maps.app.goo.gl/Qx76Pd6eB2K2ZU2t8">Address</a></p>
+    </div>
+    <div class="fcolumn">
+        <div class="copyright">
+			<h2>Copyright 2023<br>All Right Reserved.</h2>
+		</div>
+    </div>
+</footer>
+    
+    </html>
+    
+
+
+
+ 
